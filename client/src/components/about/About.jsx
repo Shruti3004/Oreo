@@ -72,7 +72,7 @@ function About() {
             Our whole team is well-managed, and we know how to give the best
             road traveling experience to our customers.
           </p>
-          <h1 className="about-last-heading">
+          <h1 className="about-last-heading mt-4">
             Hire cab for About us - Book a Taxi or Car Hire services in Varanasi
             at Minimum cost.
           </h1>
