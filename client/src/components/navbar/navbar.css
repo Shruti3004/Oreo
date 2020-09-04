@@ -2,13 +2,14 @@
   background: #fa4b2a !important;
 }
 .navbar-item {
-  border-left: 0.1px solid #ffffff;
+  border-left: 0.1px solid #e5e5e5;
   padding-top: 13px;
   padding-bottom: 13px;
   font-family: "Roboto Condensed", sans-serif !important;
+  transition: all 0.5s ease-in-out;
 }
 .navbar-item-last {
-  border-right: 0.1px solid #ffffff;
+  border-right: 0.1px solid #e5e5e5;
 }
 .navbar-item:hover,
 .navbar-item:active,
