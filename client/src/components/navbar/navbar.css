@@ -5,6 +5,7 @@
   border-left: 0.1px solid #ffffff;
   padding-top: 13px;
   padding-bottom: 13px;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 .navbar-item-last {
   border-right: 0.1px solid #ffffff;

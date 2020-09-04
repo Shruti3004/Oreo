@@ -1,6 +1,10 @@
 html,
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Raleway-Regular";
   font-size: 100%;
-  /* background: #e5e5e5; */
+  background: #e5e5e5 !important;
+}
+@font-face {
+  font-family: "Raleway-Regular" !important;
+  src: url(.././src/fonts/glyphicons-halflings-regular.ttf) format("truetype");
 }

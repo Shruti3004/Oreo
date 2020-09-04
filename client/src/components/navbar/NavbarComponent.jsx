@@ -15,11 +15,11 @@ function NavbarComponent() {
               <Nav className="mx-auto">
                 <Nav.Link
                   href="/"
-                  active
                   className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
                 >
                   Home
                 </Nav.Link>
+
                 <Nav.Link
                   href="/kashiVishwanath"
                   className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
