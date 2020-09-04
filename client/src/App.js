@@ -1,10 +1,19 @@
 import React from "react";
 import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import NavbarComponent from "./components/navbar/NavbarComponent";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
     <>
-      <h1>HAR HAR MAHADEV</h1>
+      <NavbarComponent />
+      <Router>
+        <Switch>
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </Router>
     </>
   );
 }

@@ -1,0 +1,14 @@
+.nav-background {
+  background: #fa4b2a !important;
+}
+.navbar-item {
+  border-left: 0.5px solid #ffffff;
+}
+.navbar-item-last {
+  border-right: 0.5px solid #ffffff;
+}
+.navbar-item:hover,
+.navbar-item:active,
+.navbar-item:focus {
+  background: #464646;
+}
