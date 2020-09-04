@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "./navbar.css";
@@ -13,45 +14,45 @@ function NavbarComponent() {
             <div className="container">
               <Nav className="mr-auto">
                 <Nav.Link
-                  href="/home"
+                  href="/"
                   active
-                  className="text-uppercase px-3 py-3 font-weight-bold navbar-item text-white text-center"
+                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
                 >
                   Home
                 </Nav.Link>
                 <Nav.Link
-                  href="/"
-                  className="text-uppercase px-3 py-3 font-weight-bold navbar-item text-white text-center"
+                  href="/kashiVishwanath"
+                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
                 >
                   Kashi Vishwanath
                 </Nav.Link>
                 <Nav.Link
-                  href="/"
-                  className="text-uppercase px-3 py-3 font-weight-bold navbar-item text-white text-center"
+                  href="/places"
+                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
                 >
                   Top 10 tourist places in Varanasi
                 </Nav.Link>
                 <Nav.Link
-                  href="/"
-                  className="text-uppercase px-3 py-3 font-weight-bold navbar-item text-white text-center"
+                  href="/carHire"
+                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
                 >
                   Car Hire
                 </Nav.Link>
                 <Nav.Link
-                  href="/"
-                  className="text-uppercase px-3 py-3 font-weight-bold navbar-item text-white text-center"
+                  href="/taxiService"
+                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
                 >
                   Taxi Service
                 </Nav.Link>
                 <Nav.Link
-                  href="/"
-                  className="text-uppercase px-3 py-3 font-weight-bold navbar-item text-white text-center"
+                  href="/about"
+                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
                 >
                   About Us
                 </Nav.Link>
                 <Nav.Link
                   href="/contact"
-                  className="text-uppercase px-3 py-3 font-weight-bold navbar-item navbar-item-last text-white text-center"
+                  className="text-uppercase px-3 font-weight-bold navbar-item navbar-item-last text-white text-center"
                 >
                   Contact
                 </Nav.Link>

@@ -3,6 +3,8 @@
 }
 .navbar-item {
   border-left: 0.1px solid #ffffff;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 .navbar-item-last {
   border-right: 0.1px solid #ffffff;
