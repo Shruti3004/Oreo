@@ -2,10 +2,10 @@
   background: #fa4b2a !important;
 }
 .navbar-item {
-  border-left: 0.5px solid #ffffff;
+  border-left: 0.1px solid #ffffff;
 }
 .navbar-item-last {
-  border-right: 0.5px solid #ffffff;
+  border-right: 0.1px solid #ffffff;
 }
 .navbar-item:hover,
 .navbar-item:active,
