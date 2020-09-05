@@ -7,7 +7,7 @@ function Places() {
   const { places } = useContext(DetailsContext);
   const { title, article } = places;
   return (
-    <>
+    <React.Fragment>
       <img src={Varanasi} alt="Varanasi" className="img-fluid" />
       <div className="container">
         <div className="col-lg-8 col-md-10 col-sm-12 col-12 grey-open-sans-text">
@@ -29,7 +29,7 @@ function Places() {
           <hr />
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

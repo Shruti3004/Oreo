@@ -7,7 +7,7 @@ function KashiVishwanath() {
   const { kashiVishwanath } = useContext(DetailsContext);
   const { title, article } = kashiVishwanath;
   return (
-    <>
+    <React.Fragment>
       <img src={Varanasi} alt="Varanasi" className="img-fluid" />
       <div className="container">
         <div className="col-lg-8 col-md-10 col-sm-12 col-12 grey-open-sans-text">
@@ -29,7 +29,7 @@ function KashiVishwanath() {
           <hr />
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

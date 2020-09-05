@@ -7,7 +7,7 @@ function TaxiService() {
   const { taxiService } = useContext(DetailsContext);
   const { title, intro, article } = taxiService;
   return (
-    <>
+    <React.Fragment>
       <img src={Varanasi} alt="Varanasi" className="img-fluid" />
       <div className="container">
         <div className="col-lg-8 col-md-10 col-sm-12 col-12 grey-open-sans-text">
@@ -32,7 +32,7 @@ function TaxiService() {
           <hr />
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 
