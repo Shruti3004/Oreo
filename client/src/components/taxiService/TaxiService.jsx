@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./taxiService.css";
 import Varanasi from "../../images/varanasi.jpg";
 import { DetailsContext } from "../../context/context";
+import SubDetails from "../mutual/SubDetails";
 
 function TaxiService() {
   const { taxiService } = useContext(DetailsContext);
@@ -16,14 +17,7 @@ function TaxiService() {
             return <p>{introdetail}</p>;
           })}
           {article.map((subDetails) => {
-            return (
-              <>
-                <h2 className="sub-heading">{subDetails.heading}</h2>
-                {subDetails.paragraph.map((subParagraghDetails) => {
-                  return <p>{subParagraghDetails}</p>;
-                })}
-              </>
-            );
+            return <SubDetails key={subDetails.id} subDetails={subDetails} />;
           })}
           <h2 className="taxiService-last-heading mt-4">
             Hire cab for Taxi and Cab booking services in Varanasi at Minimum

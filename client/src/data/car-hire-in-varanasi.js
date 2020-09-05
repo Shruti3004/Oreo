@@ -6,6 +6,7 @@ export const DataCarHire = {
   ],
   article: [
     {
+      id: 1,
       heading: "Experience the road trip and hire the car for your destination",
       paragraph: [
         "Have amazing and exciting road trip with your family or friends. The road trips are the most enjoyable, during it, you will encounter many places, villages, restaurants, people, and so on thing between your starting point to the destination point. Discover yourself, enjoy with your people and make your every road trip memorable one for you and for your companions.  ",

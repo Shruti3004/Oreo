@@ -7,6 +7,7 @@ export const DataAbout = {
   ],
   article: [
     {
+      id: 1,
       heading: "Why choose us?",
       paragraph: [
         "We are the most reliable and trusted traveling company in Varanasi. People are using our service for many long years. Also, the outside travellers book us from the airport to take them to the Varanasi city. ",
@@ -15,6 +16,7 @@ export const DataAbout = {
       ],
     },
     {
+      id: 2,
       heading: "Our drivers are well-experienced",
       paragraph: [
         "When we hire the drivers for our traveling company, we test their skills and make sure that they should match with the customers’ needs. Our drivers are educated and well-mannered, they know how to every place of their roots. They can drive whole night without any difficulty and also, they can drive in the early morning at any time you want them to drive to your location. ",
