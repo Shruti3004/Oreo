@@ -8,3 +8,11 @@ body {
   font-family: "Raleway-Regular" !important;
   src: url(.././src/fonts/glyphicons-halflings-regular.ttf) format("truetype");
 }
+li {
+  list-style: none;
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif !important;
+}
