@@ -7,7 +7,7 @@ function CarHire() {
   const { carHire } = useContext(DetailsContext);
   const { title, intro, article } = carHire;
   return (
-    <>
+    <React.Fragment>
       <img src={Varanasi} alt="Varanasi" className="img-fluid" />
       <div className="container">
         <div className="col-lg-8 col-md-10 col-sm-12 col-12 grey-open-sans-text">
@@ -18,20 +18,20 @@ function CarHire() {
           {article.map((subDetails) => {
             return (
               <>
-                <h1 className="sub-heading">{subDetails.heading}</h1>
+                <h2 className="sub-heading">{subDetails.heading}</h2>
                 {subDetails.paragraph.map((subParagraghDetails) => {
                   return <p>{subParagraghDetails}</p>;
                 })}
               </>
             );
           })}
-          <h1 className="carHire-last-heading mt-4">
+          <h2 className="carHire-last-heading mt-4">
             Hire cab for Car Hire in Varanasi at Minimum cost.
-          </h1>
+          </h2>
           <hr />
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

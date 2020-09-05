@@ -5,7 +5,7 @@ import "./navbar.css";
 
 function NavbarComponent() {
   return (
-    <>
+    <React.Fragment>
       <div>
         <Navbar center expand="lg" className="nav-background py-0">
           <Navbar.Brand href="/">
@@ -70,7 +70,7 @@ function NavbarComponent() {
           </Nav.Link>
         </Navbar>
       </div>
-    </>
+    </React.Fragment>
   );
 }
 

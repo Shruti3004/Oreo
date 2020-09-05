@@ -14,10 +14,10 @@ h1.main-heading {
   font-size: 36px;
   font-family: "Roboto Condensed", sans-serif !important;
 }
-h1.sub-heading {
+h2.sub-heading {
   font-size: 30px;
 }
-h1.taxiService-last-heading {
+h2.taxiService-last-heading {
   font-size: 24px;
   font-family: "Roboto Condensed", sans-serif !important;
 }

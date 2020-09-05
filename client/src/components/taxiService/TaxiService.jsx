@@ -18,17 +18,17 @@ function TaxiService() {
           {article.map((subDetails) => {
             return (
               <>
-                <h1 className="sub-heading">{subDetails.heading}</h1>
+                <h2 className="sub-heading">{subDetails.heading}</h2>
                 {subDetails.paragraph.map((subParagraghDetails) => {
                   return <p>{subParagraghDetails}</p>;
                 })}
               </>
             );
           })}
-          <h1 className="taxiService-last-heading mt-4">
+          <h2 className="taxiService-last-heading mt-4">
             Hire cab for Taxi and Cab booking services in Varanasi at Minimum
             cost.
-          </h1>
+          </h2>
           <hr />
         </div>
       </div>
