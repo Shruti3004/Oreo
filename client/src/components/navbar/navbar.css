@@ -16,12 +16,15 @@
 .navbar-item:focus {
   background: #464646;
 }
+.icon-size {
+  font-size: 20px;
+}
 @media only screen and (max-width: 768px) {
   .navbar-item {
     border-left: none;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-bottom: 0.5px solid #ffffff;
+    border-bottom: 0.5px solid #e5e5e5;
   }
   .navbar-item-last {
     border-right: none;

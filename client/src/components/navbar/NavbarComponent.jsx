@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import "./navbar.css";
@@ -9,6 +8,11 @@ function NavbarComponent() {
     <>
       <div>
         <Navbar center expand="lg" className="nav-background py-0">
+          <Navbar.Brand href="/">
+            <span className="text-white font-weight-bold">
+              Taxi in Varanasi
+            </span>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="container">
@@ -19,7 +23,6 @@ function NavbarComponent() {
                 >
                   Home
                 </Nav.Link>
-
                 <Nav.Link
                   href="/kashiVishwanath"
                   className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
@@ -52,13 +55,19 @@ function NavbarComponent() {
                 </Nav.Link>
                 <Nav.Link
                   href="/contact"
-                  className="text-uppercase px-3 font-weight-bold navbar-item navbar-item-last text-white text-center"
+                  className="text-uppercase px-3 font-weight-bold navbar-item navbar-item-last mx-auto text-white text-center"
                 >
                   Contact
                 </Nav.Link>
               </Nav>
             </div>
           </Navbar.Collapse>
+          <Nav.Link
+            href="/contact"
+            className="text-uppercase font-weight-bold text-white text-center"
+          >
+            <i className="fas fa-phone-alt icon-size"></i>
+          </Nav.Link>
         </Navbar>
       </div>
     </>
