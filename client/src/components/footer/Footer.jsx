@@ -16,7 +16,7 @@ function Footer() {
                 equally pure as well. We just want you to know, For any help
                 that you may need at any time in varanasi, You can count on us.
               </p>
-              <p>Har Har Mahader!!</p>
+              <p>Har Har Mahadev!!</p>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 col-12 footer-middle pb-3 px-5">
               <h4>We Love You</h4>
