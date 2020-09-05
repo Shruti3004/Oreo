@@ -4,9 +4,9 @@ import "./footerNav.css";
 function FooterNav() {
   return (
     <React.Fragment>
-      <div className="foot-nav my-0">
+      <div className="foot-nav my-0 d-none d-lg-block">
         <div className="container mx-auto">
-          <ul>
+          <ul className="d-flex justify-content-center">
             <li>
               <a href="/kashiVishwanath">Kashi Darshan</a>
             </li>

@@ -7,7 +7,7 @@ function NavbarComponent() {
   return (
     <React.Fragment>
       <div>
-        <Navbar center expand="lg" className="nav-background py-0">
+        <Navbar center expand="lg" className="nav-background py-0" fixed="top">
           <Navbar.Brand href="/">
             <span className="text-white font-weight-bold">
               Taxi in Varanasi
