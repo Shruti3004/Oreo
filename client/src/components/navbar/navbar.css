@@ -13,8 +13,10 @@
 }
 .navbar-item:hover,
 .navbar-item:active,
-.navbar-item:focus {
+.navbar-item:focus,
+.active {
   background: #464646;
+  text-decoration: none !important;
 }
 .icon-size {
   font-size: 20px;

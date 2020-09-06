@@ -17,8 +17,8 @@ function App() {
   return (
     <>
       <DetailsProvider>
-        <NavbarComponent />
         <Router>
+          <NavbarComponent />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/kashiVishwanath" component={KashiVishwanath} />
