@@ -1,10 +1,13 @@
 import React from "react";
+import HomeCarousel from "./HomeCarousel";
+import HomeCards from "./HomeCards";
 
 function Home() {
   return (
-    <>
-      <h1>Home</h1>
-    </>
+    <React.Fragment>
+      <HomeCarousel />
+      <HomeCards />
+    </React.Fragment>
   );
 }
 

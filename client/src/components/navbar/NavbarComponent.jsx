@@ -7,7 +7,12 @@ function NavbarComponent() {
   return (
     <React.Fragment>
       <div>
-        <Navbar center expands="lg" className="nav-background py-0" fixed="top">
+        <Navbar
+          center
+          expands="lg"
+          className="nav-background py-0"
+          sticky="top"
+        >
           <Navbar.Brand href="/">
             <span className="text-white font-weight-bold">
               Taxi in Varanasi
@@ -17,6 +22,7 @@ function NavbarComponent() {
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="container">
               <Nav className="ml-auto">
+                {/* <Nav.Link> */}
                 <NavLink
                   exact
                   to="/"
@@ -25,6 +31,8 @@ function NavbarComponent() {
                 >
                   Home
                 </NavLink>
+                {/* </Nav.Link> */}
+                {/* <Nav.Link> */}
                 <NavLink
                   to="/kashiVishwanath"
                   activeClassName="active"
@@ -32,6 +40,9 @@ function NavbarComponent() {
                 >
                   Kashi Vishwanath
                 </NavLink>
+                {/* </Nav.Link> */}
+
+                {/* <Nav.Link> */}
                 <NavLink
                   to="/places"
                   activeClassName="active"
@@ -39,6 +50,9 @@ function NavbarComponent() {
                 >
                   Top 10 tourist places in Varanasi
                 </NavLink>
+                {/* </Nav.Link> */}
+
+                {/* <Nav.Link> */}
                 <NavLink
                   to="/carHire"
                   activeClassName="active"
@@ -46,6 +60,9 @@ function NavbarComponent() {
                 >
                   Car Hire
                 </NavLink>
+                {/* </Nav.Link> */}
+
+                {/* <Nav.Link> */}
                 <NavLink
                   to="/taxiService"
                   activeClassName="active"
@@ -53,6 +70,9 @@ function NavbarComponent() {
                 >
                   Taxi Service
                 </NavLink>
+                {/* </Nav.Link> */}
+
+                {/* <Nav.Link> */}
                 <NavLink
                   to="/about"
                   activeClassName="active"
@@ -60,6 +80,9 @@ function NavbarComponent() {
                 >
                   About Us
                 </NavLink>
+                {/* </Nav.Link> */}
+
+                {/* <Nav.Link> */}
                 <NavLink
                   to="/contact"
                   activeClassName="active"
@@ -67,6 +90,7 @@ function NavbarComponent() {
                 >
                   Contact
                 </NavLink>
+                {/* </Nav.Link> */}
               </Nav>
             </div>
           </Navbar.Collapse>

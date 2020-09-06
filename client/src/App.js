@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import NavbarComponent from "./components/navbar/NavbarComponent";
 import Home from "./components/home/Home";
 import KashiVishwanath from "./components/kashiVishwanath/KashiVishwanath";
@@ -15,23 +15,21 @@ import { DetailsProvider } from "./context/context";
 
 function App() {
   return (
-    <>
+    <React.Fragment>
+      <NavbarComponent />
       <DetailsProvider>
-        <Router>
-          <NavbarComponent />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/kashiVishwanath" component={KashiVishwanath} />
-            <Route path="/places" component={Places} />
-            <Route path="/carHire" component={CarHire} />
-            <Route path="/taxiService" component={TaxiService} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-          </Switch>
-        </Router>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/kashiVishwanath" component={KashiVishwanath} />
+          <Route path="/places" component={Places} />
+          <Route path="/carHire" component={CarHire} />
+          <Route path="/taxiService" component={TaxiService} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
         <Footer />
       </DetailsProvider>
-    </>
+    </React.Fragment>
   );
 }
 

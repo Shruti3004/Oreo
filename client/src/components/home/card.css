@@ -1,0 +1,26 @@
+.card {
+  border-color: transparent;
+}
+.card-footer {
+  background: #ffffff;
+  border-top: transparent;
+}
+.card-paragraph {
+  color: #777777;
+  font-size: 15px !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+h3 .heading {
+  color: #fa4b2a;
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+.card-paragraph .sub-heading {
+  color: #777777;
+  font-family: "Roboto Condensed", sans-serif !important;
+  margin-bottom: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.card-paragraph hr {
+  padding: 0rem !important;
+  margin: 0rem !important;
+}
