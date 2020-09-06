@@ -12,6 +12,7 @@ import Contact from "./components/contact/Contact";
 import Places from "./components/places/Places";
 import Footer from "./components/footer/Footer";
 import { DetailsProvider } from "./context/context";
+import BookNow from "./components/bookNow/BookNow";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/contact" component={Contact} />
         </Switch>
         <Footer />
+        <BookNow />
       </DetailsProvider>
     </React.Fragment>
   );

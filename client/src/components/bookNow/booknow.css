@@ -1,0 +1,7 @@
+.book-now {
+  position: fixed;
+  bottom: 2vh;
+  right: 1vh;
+  max-height: 150px;
+  max-width: 150px;
+}

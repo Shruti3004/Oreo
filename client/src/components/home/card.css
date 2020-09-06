@@ -5,6 +5,17 @@
   background: #ffffff;
   border-top: transparent;
 }
+.img-block {
+  position: relative;
+}
+a.blog {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  padding: 0.3em 1.8em;
+  background: #fa4b2a;
+  font-family: "Roboto Condensed", sans-serif !important;
+}
 .card-paragraph {
   color: #777777;
   font-size: 15px !important;
@@ -23,4 +34,8 @@ h3 .heading {
 .card-paragraph hr {
   padding: 0rem !important;
   margin: 0rem !important;
+}
+.blog-post {
+  font-size: 14px;
+  color: #777777;
 }
