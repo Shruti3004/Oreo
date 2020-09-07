@@ -12,7 +12,7 @@ export const DataHome = {
       blogPost: [
         "4500+ pickups",
         "We will wait for you",
-        "Fastest cab in Varanasi",
+        "3 comments",
         "5 favourites",
         "1.128k views",
       ],
@@ -28,7 +28,7 @@ export const DataHome = {
       blogPost: [
         "4500+ pickups",
         "We will wait for you",
-        "Fastest cab in Varanasi",
+        "3 comments",
         "5 favourites",
         "1.128k views",
       ],
@@ -44,7 +44,7 @@ export const DataHome = {
       blogPost: [
         "4500+ pickups",
         "We will wait for you",
-        "Fastest cab in Varanasi",
+        "3 comments",
         "5 favourites",
         "1.128k views",
       ],
@@ -60,7 +60,7 @@ export const DataHome = {
       blogPost: [
         "4500+ pickups",
         "We will wait for you",
-        "Fastest cab in Varanasi",
+        "3 comments",
         "5 favourites",
         "1.128k views",
       ],

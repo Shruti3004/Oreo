@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import NavItem from "react-bootstrap/NavItem";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
 function NavbarComponent() {
@@ -22,75 +23,75 @@ function NavbarComponent() {
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="container">
               <Nav className="ml-auto">
-                {/* <Nav.Link> */}
-                <NavLink
-                  exact
-                  to="/"
-                  activeClassName="active"
-                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
-                >
-                  Home
-                </NavLink>
-                {/* </Nav.Link> */}
-                {/* <Nav.Link> */}
-                <NavLink
-                  to="/kashiVishwanath"
-                  activeClassName="active"
-                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
-                >
-                  Kashi Vishwanath
-                </NavLink>
-                {/* </Nav.Link> */}
+                <NavItem>
+                  <NavLink
+                    exact
+                    to="/"
+                    activeClassName="active"
+                    className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
+                  >
+                    Home
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    to="/kashiVishwanath"
+                    activeClassName="active"
+                    className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
+                  >
+                    Kashi Vishwanath
+                  </NavLink>
+                </NavItem>
 
-                {/* <Nav.Link> */}
-                <NavLink
-                  to="/places"
-                  activeClassName="active"
-                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
-                >
-                  Top 10 tourist places in Varanasi
-                </NavLink>
-                {/* </Nav.Link> */}
+                <NavItem>
+                  <NavLink
+                    to="/places"
+                    activeClassName="active"
+                    className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
+                  >
+                    Top 10 tourist places in Varanasi
+                  </NavLink>
+                </NavItem>
 
-                {/* <Nav.Link> */}
-                <NavLink
-                  to="/carHire"
-                  activeClassName="active"
-                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
-                >
-                  Car Hire
-                </NavLink>
-                {/* </Nav.Link> */}
+                <NavItem>
+                  <NavLink
+                    to="/carHire"
+                    activeClassName="active"
+                    className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
+                  >
+                    Car Hire
+                  </NavLink>
+                </NavItem>
 
-                {/* <Nav.Link> */}
-                <NavLink
-                  to="/taxiService"
-                  activeClassName="active"
-                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
-                >
-                  Taxi Service
-                </NavLink>
-                {/* </Nav.Link> */}
+                <NavItem>
+                  <NavLink
+                    to="/taxiService"
+                    activeClassName="active"
+                    className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
+                  >
+                    Taxi Service
+                  </NavLink>
+                </NavItem>
 
-                {/* <Nav.Link> */}
-                <NavLink
-                  to="/about"
-                  activeClassName="active"
-                  className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
-                >
-                  About Us
-                </NavLink>
-                {/* </Nav.Link> */}
+                <NavItem>
+                  <NavLink
+                    to="/about"
+                    activeClassName="active"
+                    className="text-uppercase px-3 font-weight-bold navbar-item text-white text-center"
+                  >
+                    About Us
+                  </NavLink>
+                </NavItem>
 
-                {/* <Nav.Link> */}
-                <NavLink
-                  to="/contact"
-                  activeClassName="active"
-                  className="text-uppercase px-3 font-weight-bold navbar-item navbar-item-last mx-auto text-white text-center"
-                >
-                  Contact
-                </NavLink>
-                {/* </Nav.Link> */}
+                <NavItem>
+                  <NavLink
+                    to="/contact"
+                    activeClassName="active"
+                    className="text-uppercase px-3 font-weight-bold navbar-item navbar-item-last mx-auto text-white text-center"
+                  >
+                    Contact
+                  </NavLink>
+                </NavItem>
               </Nav>
             </div>
           </Navbar.Collapse>

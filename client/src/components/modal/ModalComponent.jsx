@@ -1,18 +1,17 @@
 import React, { useState } from "react";
-import booknow from "../../images/bookNow.png";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import "./booknow.css";
 
-function BookNow() {
+function ModalComponent() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <React.Fragment>
-      <div onClick={handleShow}>
-        <img src={booknow} alt="Book now" className="img-fluid book-now" />
-      </div>
+      <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
@@ -31,4 +30,4 @@ function BookNow() {
   );
 }
 
-export default BookNow;
+export default ModalComponent;

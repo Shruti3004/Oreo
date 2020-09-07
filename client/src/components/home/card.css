@@ -39,3 +39,35 @@ h3 .heading {
   font-size: 14px;
   color: #777777;
 }
+i.fa-google {
+  background: #384853;
+}
+i.fa-facebook-f {
+  background: #337ab7;
+}
+i.fa-twitter {
+  background: #2cc5f0;
+}
+i.fa-envelope-open {
+  background: #738a8d;
+}
+i.fa-plus {
+  background: #f8694d;
+}
+@media (max-width: 568px) {
+  i.fa-google {
+    font-size: 18px;
+  }
+  i.fa-facebook-f {
+    font-size: 18px;
+  }
+  i.fa-twitter {
+    font-size: 18px;
+  }
+  i.fa-envelope-open {
+    font-size: 18px;
+  }
+  i.fa-plus {
+    font-size: 18px;
+  }
+}
