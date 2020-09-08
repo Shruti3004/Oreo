@@ -13,7 +13,6 @@ import Places from "./components/places/Places";
 import Footer from "./components/footer/Footer";
 import { DetailsProvider } from "./context/context";
 import BookNow from "./components/bookNow/BookNow";
-import ModalComponent from "./components/modal/ModalComponent";
 
 function App() {
   return (
@@ -29,7 +28,6 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
         </Switch>
-        <ModalComponent />
         <Footer />
         <BookNow />
       </DetailsProvider>

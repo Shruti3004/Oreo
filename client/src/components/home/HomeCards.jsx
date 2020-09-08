@@ -7,7 +7,6 @@ function HomeCards() {
   const { article } = home;
   return (
     <React.Fragment>
-      {console.log(article)};
       {article.map((card) => {
         return <Card key={card.id} article={card}></Card>;
       })}

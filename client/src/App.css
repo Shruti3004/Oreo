@@ -19,6 +19,9 @@ body {
   background: #fa4b2a;
   border-radius: 10px;
 }
+::placeholder {
+  font-family: "Roboto Condensed", sans-serif;
+}
 li {
   list-style: none;
   margin: 0;
