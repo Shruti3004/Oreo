@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import FooterNav from "./FooterNav";
 import Copyright from "./Copyright";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -33,24 +34,36 @@ function Footer() {
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 col-12 footer-right pb-3 px-5">
               <h4>Quick Links</h4>
-              <li>
-                <a href="/">Varanasi Airport pickup</a>
-              </li>
-              <li>
-                <a href="/">Distance between Varanasi airport to city</a>
-              </li>
-              <li>
-                <a href="/">Cab rent from varanasi to Sangam</a>
-              </li>
-              <li>
-                <a href="/">hire cab in Benaras city</a>
-              </li>
-              <li>
-                <a href="/">Reserve taxi In varanasi</a>
-              </li>
-              <li>
-                <a href="/">Varanasi to Gaya cab rental</a>
-              </li>
+              <Link to="/">
+                <li className="text-white footer-li">
+                  Varanasi Airport pickup
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="text-white footer-li">
+                  Distance between Varanasi airport to city
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="text-white footer-li">
+                  Cab rent from varanasi to Sangam
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="text-white footer-li">
+                  Hire cab in Benaras city
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="text-white footer-li">
+                  Reserve taxi In varanasi
+                </li>
+              </Link>
+              <Link to="/">
+                <li className="text-white footer-li">
+                  Varanasi to Gaya cab rental
+                </li>
+              </Link>
             </div>
             <div className="clearfix "></div>
           </div>

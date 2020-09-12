@@ -24,20 +24,20 @@
 }
 .footer h4 {
   font-size: 1.7em;
-  color: #fff;
+  color: rgb(223, 209, 209);
   border-bottom: 1px solid #fff;
   width: 89% !important;
   margin-bottom: 1em;
   font-family: "Roboto Condensed", sans-serif;
 }
-.footer-right li a {
+.footer-right li {
   color: #fff;
   font-size: 0.875em;
   line-height: 1.8em;
   font-family: "Roboto Condensed", sans-serif;
 }
-.footer-right li a:hover {
-  color: #fa4b2a;
+.footer-right li:hover {
+  color: #fa4b2a !important;
 }
 .footer-right li {
   display: block;
