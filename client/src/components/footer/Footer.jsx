@@ -26,8 +26,8 @@ function Footer() {
                   for 6 an Innova is an excellent choice, and Any number of
                   busses are eagerly waiting to welcome you.
                 </p>
-                <a href="https://www.TaxiInVaranasi.com/ ">
-                  https://TaxiInVaranasi.com/
+                <a href="https://www.taxiinVaranasi.in/ ">
+                  https://www.taxiinVaranasi.in/
                 </a>
               </div>
             </div>

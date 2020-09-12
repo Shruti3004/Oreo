@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import booknow from "../../images/bookNow.png";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import swal from "sweetalert";
 import "./booknow.css";
 
 function BookNow() {
@@ -13,7 +14,15 @@ function BookNow() {
   const handleShow = () => setShow(true);
   const handleSubmit = (e) => {
     e.preventDefault();
-    setShow(false);
+    if (name !== "" && phone !== "") {
+      setShow(false);
+      swal({
+        title: "You will be contacted with best deal shortly",
+        icon: "success",
+      });
+    } else {
+      swal({ text: "Please fill in the required details", icon: "info" });
+    }
   };
   return (
     <React.Fragment>
@@ -27,7 +36,7 @@ function BookNow() {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <form className="form-horizontal" onClick={handleSubmit}>
+          <form className="form-horizontal">
             <div className="form-group">
               <div className="row no-gutters">
                 <div className="col-sm-12">
@@ -93,6 +102,7 @@ function BookNow() {
                   <button
                     type="submit"
                     className="btn btn-success px-4 py-1 mb-3"
+                    onClick={handleSubmit}
                   >
                     Submit
                   </button>
@@ -100,7 +110,7 @@ function BookNow() {
               </div>
             </div>
           </form>
-          <div className="row no-gutters mb-2">
+          {/* <div className="row no-gutters mb-2">
             <div className="col-sm-4"></div>
             <div className="col-sm-8">
               <h4 className=" text-success modal-sub-heading">
@@ -110,7 +120,7 @@ function BookNow() {
                 You choose which ever suits you the best
               </h4>
             </div>
-          </div>
+          </div> */}
         </Modal.Body>
         <Modal.Footer className="modal-form-footer p-2">
           <Button
