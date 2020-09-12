@@ -27,7 +27,7 @@ function BookNow() {
   return (
     <React.Fragment>
       <a href="tel:+91-8800939951">
-        <div className="call-button p-2">
+        <div className="call-button py-2">
           <i className="fas fa-phone text-white"></i>
         </div>
       </a>

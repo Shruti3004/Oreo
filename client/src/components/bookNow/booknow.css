@@ -42,6 +42,8 @@
   .call-button {
     display: block;
     position: fixed;
+    padding-right: 12px;
+    padding-left: 12px;
     bottom: 2vh;
     right: 1vh;
     border-radius: 50%;
