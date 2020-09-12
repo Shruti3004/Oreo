@@ -17,7 +17,7 @@ function BookNow() {
     if (name !== "" && phone !== "") {
       setShow(false);
       swal({
-        title: "You will be contacted with best deal shortly",
+        text: "You will be contacted with best deal shortly",
         icon: "success",
       });
     } else {
@@ -26,6 +26,11 @@ function BookNow() {
   };
   return (
     <React.Fragment>
+      <a href="tel:+91-8800939951">
+        <div className="call-button p-2">
+          <i className="fas fa-phone text-white"></i>
+        </div>
+      </a>
       <div onClick={handleShow}>
         <img src={booknow} alt="Book now" className="img-fluid book-now" />
       </div>

@@ -5,6 +5,9 @@
   max-height: 150px;
   max-width: 150px;
 }
+.call-button {
+  display: none;
+}
 .modal-form-header {
   background: #fa4b2a;
 }
@@ -30,7 +33,18 @@
 }
 @media (max-width: 768px) {
   .book-now {
+    position: fixed;
+    bottom: 2vh;
+    left: 1vh;
     max-height: 100px;
     max-width: 100px;
+  }
+  .call-button {
+    display: block;
+    position: fixed;
+    bottom: 2vh;
+    right: 1vh;
+    border-radius: 50%;
+    background: #fa4b2a;
   }
 }
