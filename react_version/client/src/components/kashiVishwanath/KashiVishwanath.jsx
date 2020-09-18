@@ -1,21 +1,43 @@
-import React, { useContext } from "react";
+import React, { useEffect, useState } from "react";
 import "./kashiVishwanath.css";
 import Varanasi from "../../images/varanasi.jpg";
-import { DetailsContext } from "../../context/context";
 import SubDetails from "../mutual/SubDetails";
+import axios from "axios";
 
 function KashiVishwanath() {
-  const { kashiVishwanath } = useContext(DetailsContext);
-  const { title, article } = kashiVishwanath;
+  const [data, setData] = useState({});
+  const dataKashi = async () => {
+    try {
+      var url = "/dataKashi";
+      var request = {
+        url,
+        method: "get",
+      };
+      const res = await axios(request);
+      const kashi = await res.data;
+      setData(kashi);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+    dataKashi();
+  }, []);
+
+  const { title, article } = data;
   return (
     <React.Fragment>
       <img src={Varanasi} alt="Varanasi" className="img-fluid" />
       <div className="container">
         <div className="col-lg-8 col-md-10 col-sm-12 col-12 grey-open-sans-text">
           <h1 className="main-heading mt-4">{title}</h1>
-          {article.map((subDetails) => {
-            return <SubDetails key={subDetails.id} subDetails={subDetails} />;
-          })}
+          {article
+            ? article.map((subDetails) => {
+                return (
+                  <SubDetails key={subDetails.id} subDetails={subDetails} />
+                );
+              })
+            : ""}
           <h2 className="kashi-last-heading mt-4">
             Hire cab for Top 10 Tourist destinations in Varanasi at Minimum
             cost.

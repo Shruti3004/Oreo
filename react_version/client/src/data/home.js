@@ -6,7 +6,7 @@ export const DataHome = {
       imageBlog: "Pickup/Drop Rs-750",
       heading: "Book Cab At Varanasi Airport",
       paragraph:
-        "Babatpur 26 km northwest of Varanasi,Car Takes 45 mins to reach Airport from Varanasi, ie Get to Varanasi Airport at minimum cost. Get picked/Drop up From Varanasi/Babatpur Airport in Sedan at Rs 750-/ only. Hire Innova at Babatpur Airport at minimum Rate of Rs 950 immidiately. With over 25 years of experience We guarenty 100% Customer SatisfactionBest Quality Cabs In Varanasi are provided at minimum cost.",
+        "Babatpur 26 km northwest of Varanasi,Car Takes 45 mins to reach Airport from Varanasi, ie Get to Varanasi Airport at minimum cost. Get picked/Drop up From Varanasi/Babatpur Airport in Sedan at Rs 750-/ only. Hire Innova at Babatpur Airport at minimum Rate of Rs 950 immediately. With over 25 years of experience We guarantee 100% Customer Satisfaction Best Quality Cabs In Varanasi are provided at minimum cost.",
       subHeading:
         "Hire cab at Lal Bahadur Shastri International Airport Varanasi at Minimum cost.",
       blogPost: [
@@ -23,7 +23,7 @@ export const DataHome = {
       imageBlog: "Kashi Vishwanath Darshan",
       heading: "Kashi Vishwanath Darshan",
       paragraph:
-        "Introduction In the heart of Varanasi city, there stands in its fullest majesty the Kashi Vishwanath Temple in which is enshrined the Jyotirlinga of Shiva, Vishweshwara or Vishwanatha. Here gravitate the teeming millions of Indian to seek benediction and spiritual peace by the darshan of Kashi VIshwanath Jyotirlinga which confers liberation from the bondages of maya and the inexorable entanglements of the world. A simple glimpse of the Jyotirlinga is a soul-cleansing experience that transforms life and puts it on the path of knowledge and bhakti.",
+        "In the heart of Varanasi city, there stands in its fullest majesty the Kashi Vishwanath Temple in which is enshrined the Jyotirlinga of Shiva, Vishweshwara or Vishwanatha. Here gravitate the teeming millions of Indian to seek benediction and spiritual peace by the darshan of Kashi VIshwanath Jyotirlinga which confers liberation from the bondages of maya and the inexorable entanglements of the world. A simple glimpse of the Jyotirlinga is a soul-cleansing experience that transforms life and puts it on the path of knowledge and bhakti.",
       subHeading: "Hire Cab For Kashi Vishwanath Darshan at 750 Rs only",
       blogPost: [
         "4500+ pickups",
@@ -67,3 +67,4 @@ export const DataHome = {
     },
   ],
 };
+ 

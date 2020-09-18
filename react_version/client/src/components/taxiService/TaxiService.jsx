@@ -1,24 +1,48 @@
-import React, { useContext } from "react";
+import React, { useEffect, useState } from "react";
 import "./taxiService.css";
 import Varanasi from "../../images/varanasi.jpg";
-import { DetailsContext } from "../../context/context";
 import SubDetails from "../mutual/SubDetails";
+import axios from "axios";
 
 function TaxiService() {
-  const { taxiService } = useContext(DetailsContext);
-  const { title, intro, article } = taxiService;
+  const [data, setData] = useState({});
+  const dataTaxiService = async () => {
+    try {
+      var url = "/dataTaxiService";
+      var request = {
+        url,
+        method: "get",
+      };
+      const res = await axios(request);
+      const taxiService = await res.data;
+      setData(taxiService);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+    dataTaxiService();
+  }, []);
+
+  const { title, intro, article } = data;
   return (
     <React.Fragment>
       <img src={Varanasi} alt="Varanasi" className="img-fluid" />
       <div className="container">
         <div className="col-lg-8 col-md-10 col-sm-12 col-12 grey-open-sans-text">
           <h1 className="main-heading mt-4">{title}</h1>
-          {intro.map((introdetail) => {
-            return <p>{introdetail}</p>;
-          })}
-          {article.map((subDetails) => {
-            return <SubDetails key={subDetails.id} subDetails={subDetails} />;
-          })}
+          {intro
+            ? intro.map((introdetail, index) => {
+                return <p key={index}>{introdetail}</p>;
+              })
+            : ""}
+          {article
+            ? article.map((subDetails) => {
+                return (
+                  <SubDetails key={subDetails.id} subDetails={subDetails} />
+                );
+              })
+            : ""}
           <h2 className="taxiService-last-heading mt-4">
             Hire cab for Taxi and Cab booking services in Varanasi at Minimum
             cost.

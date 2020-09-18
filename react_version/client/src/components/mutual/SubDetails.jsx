@@ -5,8 +5,8 @@ function SubDetails({ subDetails }) {
   return (
     <React.Fragment>
       <h2 className="sub-heading">{subDetails.heading}</h2>
-      {subDetails.paragraph.map((subParagraghDetails) => {
-        return <p>{subParagraghDetails}</p>;
+      {subDetails.paragraph.map((subParagraghDetails, index) => {
+        return <p key={index}>{subParagraghDetails}</p>;
       })}
     </React.Fragment>
   );

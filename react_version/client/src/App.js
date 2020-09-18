@@ -27,6 +27,12 @@ function App() {
           <Route path="/taxiService" component={TaxiService} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          {/* <Route
+            path="/:name"
+            render={() => {
+              return <About />;
+            }}
+          /> */}
         </Switch>
         <Footer />
         <BookNow />

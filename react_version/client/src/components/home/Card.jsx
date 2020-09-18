@@ -1,5 +1,6 @@
 import React from "react";
 import "./card.css";
+import { Link } from "react-router-dom";
 
 function Card({ article }) {
   const {
@@ -43,9 +44,9 @@ function Card({ article }) {
                     </h3>
                     <p className="card-paragraph p-0">
                       {paragraph}
-                      <a href="/places" className="text-success">
-                        ...Read More
-                      </a>
+                      <Link to="/places">
+                        <span className="text-success">...Read More</span>
+                      </Link>
                       <h4 className="sub-heading mt-3">{subHeading}</h4>
                     </p>
                     <hr />

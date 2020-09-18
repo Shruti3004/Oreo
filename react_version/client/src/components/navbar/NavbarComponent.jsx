@@ -80,6 +80,7 @@ function NavbarComponent() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+      {/* {console.clear()} */}
     </React.Fragment>
   );
 }

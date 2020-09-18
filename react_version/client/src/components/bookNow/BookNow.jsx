@@ -3,6 +3,7 @@ import booknow from "../../images/bookNow.png";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import swal from "sweetalert";
+import axios from "axios";
 import "./booknow.css";
 
 function BookNow() {
@@ -14,12 +15,37 @@ function BookNow() {
   const handleShow = () => setShow(true);
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (name !== "" && phone !== "") {
-      setShow(false);
-      swal({
-        text: "You will be contacted with best deal shortly",
-        icon: "success",
-      });
+      e.preventDefault();
+      (async () => {
+        try {
+          var params = {
+            name,
+            phone,
+            email,
+          };
+          var url = "/message";
+          const res = await axios.post(url, params, {
+            headers: { "Content-type": "application/json" },
+          });
+          const resData = await res.data;
+          if (resData.status === "success") {
+            setShow(false);
+            swal({
+              text: "You will be contacted with best deal shortly",
+              icon: "success",
+            });
+          } else if (resData.status === "fail") {
+            swal({
+              text: "Check your network connection",
+              icon: "error",
+            });
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      })();
     } else {
       swal({ text: "Please fill in the required details", icon: "info" });
     }
@@ -58,7 +84,7 @@ function BookNow() {
                         id="name"
                         placeholder="Enter Your Name"
                         value={name}
-                        onClick={(e) => setName(e.value)}
+                        onChange={(e) => setName(e.target.value)}
                         required
                       />
                       <div className="invalid-feedback">Name is required</div>
@@ -79,7 +105,7 @@ function BookNow() {
                     id="mobNumber"
                     placeholder="Your Mobile number"
                     value={phone}
-                    onClick={(e) => setPhone(e.value)}
+                    onChange={(e) => setPhone(e.target.value)}
                     required
                   />
                 </div>
@@ -97,7 +123,7 @@ function BookNow() {
                     id="email"
                     placeholder="Enter email"
                     value={email}
-                    onClick={(e) => setEmail(e.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
               </div>
@@ -115,17 +141,6 @@ function BookNow() {
               </div>
             </div>
           </form>
-          {/* <div className="row no-gutters mb-2">
-            <div className="col-sm-4"></div>
-            <div className="col-sm-8">
-              <h4 className=" text-success modal-sub-heading">
-                You will be contacted with best deal shortly
-              </h4>
-              <h4 className="text-success modal-sub-heading">
-                You choose which ever suits you the best
-              </h4>
-            </div>
-          </div> */}
         </Modal.Body>
         <Modal.Footer className="modal-form-footer p-2">
           <Button
